@@ -9,7 +9,7 @@ Version: 1.0
 Murun Scripts
 */
 (function($){ "use strict";
-             
+
     $(window).on('load', function() {
         $('body').addClass('loaded');
     });
@@ -32,23 +32,23 @@ Murun Scripts
 
 		});
 	});
-       
+
 /*****************/
 /** Typing text **/
-/*****************/       
+/*****************/
 
     $(".typing").typed({
         strings: [
-                "present Your beautiful mobile app.",
-                "Present a Responsive Design"
+                "Avances en efectivo sobre cualquier tarjeta de credito y bono.",
+                "Facil , Rapido y Seguro"
             ],
         typeSpeed:100,
         backDelay:2000,
         loop:true
-    });      
+    });
 /*************************/
 /** Screenshot carousel **/
-/*************************/       
+/*************************/
 
         function getSlide() {
             var wW = $(window).width();
@@ -57,9 +57,9 @@ Murun Scripts
             }
             return 3;
         }
-      
+
         var mySwiper = $('.screen-carousel').swiper({
-      
+
             mode:'horizontal',
             loop: true,
             speed: 1000,
@@ -91,7 +91,7 @@ Murun Scripts
 /** Swipbox Active **/
 /*******************/
 	$( '.lightbox' ).swipebox();
-    
+
 /*******************/
 /** Wow Settings **/
 /*******************/
@@ -100,7 +100,7 @@ Murun Scripts
         offset: 0
     });
     wow.init();
-             
+
 /*******************/
 /** Subscribe Form **/
 /*******************/
@@ -118,7 +118,7 @@ Murun Scripts
         $('#' + section_id).find('form').find('button').text('loading...');
         $('#' + section_id).find('form input').each(
             function (index) {
-                
+
                 if ($(this).is('[data-email="required"]')) {
                     var required_val = $(this).val();
                     if (required_val != '') {
@@ -138,8 +138,8 @@ Murun Scripts
                 }
 
             });
-        
-        if (fs_process) 
+
+        if (fs_process)
         {
             localStorage.setItem('fs-section',section_id);
             $.post("mail/process.php", {
@@ -148,22 +148,22 @@ Murun Scripts
             }, function (data) {
                 $('#loading').remove();
                 var fs_form_output = '';
-                if(data) 
+                if(data)
                 {
-                    if(data.type == "fs-message") 
+                    if(data.type == "fs-message")
                     {
-                       $('#error-msg').remove(); 
+                       $('#error-msg').remove();
                        $('#success-msg').remove();
                        var fs_form_output = '<div id="success-msg" class="padding-15 mt-15 bdrs-3" style="border: 1px solid green; color: green;">'+data.text+'</div>';
                          $('#' + section_id).find('form').find('button').text('Success');
                     }else if (data.type == "fs_error") {
                         $('#' + section_id).find('form').find('button').text('Send');
                         $('#success-msg').remove();
-                        $('#error-msg').remove(); 
+                        $('#error-msg').remove();
                         var fs_form_output = '<div id="error-msg" class="padding-15 mt-15 bdrs-3" style="border: 1px solid red; color: red;">'+data.text+'</div>';
                     }else{
                         var fs_form_output = '';
-                    } 
+                    }
                 }
 
                 if(fs_form_output != '')
@@ -187,7 +187,7 @@ Murun Scripts
                 localStorage.removeItem('fs_section');
             }, 'json');
         }
-        
+
         $('#' + section_id).find('form input').each(function (index) {
             $(this).keypress(function () {
                 $(this).removeClass('fs_input_error');
@@ -204,7 +204,7 @@ Murun Scripts
 
 /*******************/
 /** Scroll To Top **/
-/*******************/ 
+/*******************/
     $(window).on( 'scroll', function () {
         if ($(this).scrollTop() > 600) {
             $('#scroll-top').fadeIn();
