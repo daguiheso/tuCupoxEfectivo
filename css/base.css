@@ -19,7 +19,7 @@ BASE CSS
   @import url('swiper.min.css');
 	@import url('main.css');
 	@import url('responsive.css');
-    
+
     /* Custom Font */
     @font-face {
         font-family: 'LANENAR';
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6{
 	margin: 0 0 10px;
 	color: #333;
 }
-h2{ 
+h2{
 	font-size: 32px;
 	font-weight: 300;
     line-height: 1.4;
@@ -145,15 +145,15 @@ textarea::-webkit-input-placeholder{
 }
 input:-moz-placeholder,
 textarea:-moz-placeholder{ /* Firefox 18- */
-   color: #ddd !important;  
+   color: #ddd !important;
 }
 input::-moz-placeholder,
 textarea::-moz-placeholder{  /* Firefox 19+ */
-   color: #ddd !important;  
+   color: #ddd !important;
 }
 input:-ms-input-placeholder,
-textarea:-ms-input-placeholder{  
-   color: #ddd !important;  
+textarea:-ms-input-placeholder{
+   color: #ddd !important;
 }
 
 /**********************/
@@ -703,4 +703,40 @@ body.loaded #preloader{
     position: absolute;
     left: 0;
     top: 0;
+}
+
+
+.swiper-wrapper img {
+	max-width: 220px;
+}
+
+.perz {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.linkW {
+	color: white;
+	font-size: 40px;
+}
+.linkW:hover {
+	color: #14C214;
+}
+h1 {
+	font-weight: bold;
+}
+
+.footer__bottom {
+	text-align: center;
+}
+.footer-section a {
+	color:greenyellow;
+	font-size: 20px;
+}
+.footer-section p {
+	margin-bottom: 15px;
+}
+.footer-section a:hover {
+	color: white;
 }

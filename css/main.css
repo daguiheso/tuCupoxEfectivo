@@ -8,7 +8,7 @@ Version: 1.0
 ======================================
 Table of Contents
 ======================================
-    
+
 1.0 Header
 2.0 Hero Section
 3.0 Promo Section
@@ -22,7 +22,7 @@ Table of Contents
 11.0 Subscribe Section
 12.0 Footer
 13.0 Scroll To Top
-    
+
 /*****************/
 /** 1.0 Header ***/
 /*****************/
@@ -39,7 +39,7 @@ Table of Contents
     transition: all 0.2s ease 0s;
 }
 .fixed-top.transparent-header{
-	background-color: #1185a9;
+	background-color: rgba(0, 0, 0, .8);
 }
 .transparent-header ul.nav > li > a{
 	color: #ddd;
@@ -119,12 +119,12 @@ ul.nav > li.active > a{
 /***********************/
 
 .hero-section{
-    background-image: url(../img/background.jpg);
+    background-image: url(../img/background5.jpg);
     background-size: cover;
 }
 .hero-content{
     padding-top: 135px;
-} 
+}
 .hero-section .display-table{
     background-color: rgba(0,0,0,0.4);
 }
@@ -443,15 +443,15 @@ ul.nav > li.active > a{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid #1185a9;
-    color: #1185a9;
+    border: 1px solid greenyellow;
+    color: greenyellow;
     display: inline-block;
     text-align: center;
     line-height: 28px;
 }
 .footer-social li a:hover{
     text-decoration: none;
-    background-color: #1185a9;
+    background-color: greenyellow;
     color: #fff;
 }
 
@@ -462,7 +462,7 @@ ul.nav > li.active > a{
 .scroll-to-top{
 	display: block;
 	text-align: center;
-	background-color: #1185a9;
+	background-color: greenyellow;
 	font-size: 12px;
 	width: 40px;
 	height: 40px;
