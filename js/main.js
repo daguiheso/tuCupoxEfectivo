@@ -41,8 +41,7 @@ Murun Scripts
         strings: [
             "todas las tarjetas de crédito",
             "bonos",
-            "cheques",
-            "Facil , Rapido y Seguro"
+            "cheques"
         ],
         typeSpeed:100,
         backDelay:2000,
