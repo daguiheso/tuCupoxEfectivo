@@ -39,10 +39,11 @@ Murun Scripts
 
     $(".typing").typed({
         strings: [
-                "Avances en efectivo sobre cualquier tarjeta de crédito",
-                "Cambio de Bonos por Efectivo",
-                "Facil , Rapido y Seguro"
-            ],
+            "todas las tarjetas de crédito",
+            "bonos",
+            "cheques",
+            "Facil , Rapido y Seguro"
+        ],
         typeSpeed:100,
         backDelay:2000,
         loop:true
