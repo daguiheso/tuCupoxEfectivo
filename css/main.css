@@ -119,7 +119,7 @@ ul.nav > li.active > a{
 /***********************/
 
 .hero-section{
-    background-image: url(../img/background5.jpg);
+    background: url(../img/background4.jpg) center no-repeat;
     background-size: cover;
 }
 .hero-content{
@@ -433,21 +433,29 @@ ul.nav > li.active > a{
 /*****************/
 /** 12.0 HeaFooterder ***/
 /*****************/
-.footer-social{}
+.footer-social{
+    text-align: center;
+    margin: 0 0 20px;
+}
 .footer-social li{
     display: inline-block;
     margin-left: 10px;
 }
 .footer-social li a{
     font-size: 10px;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 1px solid greenyellow;
     color: greenyellow;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     line-height: 28px;
+}
+.footer-social li a i{
+    font-size: 25px;
 }
 .footer-social li a:hover{
     text-decoration: none;
@@ -479,5 +487,9 @@ ul.nav > li.active > a{
 	-webkit-transform: translateY(-5px);
 	transform: translateY(-5px);
 	text-decoration: none;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
 }
 
