@@ -39,8 +39,22 @@ Murun Scripts
 
     $(".typing").typed({
         strings: [
-            "todas las tarjetas de crédito",
-            "bonos",
+            "todas las tarjetas de crédito"
+        ],
+        typeSpeed:100,
+        backDelay:2000,
+        loop:true
+    });
+    $(".typing2").typed({
+        strings: [
+            "bonos"
+        ],
+        typeSpeed:100,
+        backDelay:2000,
+        loop:true
+    });
+    $(".typing3").typed({
+        strings: [
             "cheques"
         ],
         typeSpeed:100,
